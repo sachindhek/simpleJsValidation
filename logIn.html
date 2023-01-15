@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <title>LogIn</title>
+    <link rel="stylesheet" href="login.css">
+    <script src="login.js"></script>
+    <script src="registration.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="login-form col-md-6 offset-md-3 ">
+                <div class="header">
+                    <h2 class="h2 welcome">Login</h2>
+                </div>
+
+                <form class="row g-3 needs-validation">
+                    <input class="form-control" type="email" name="email" id="emailid" placeholder="Email" required>
+                    <span id="email-validation" class="text-danger">
+                    </span>
+
+                    <input class="form-control" type="password" name="pass" id="password" placeholder="Password"
+                        required>
+                    <span id="email-validation" class="text-danger">
+                    </span>
+
+                    <input class="btn btn-primary" type="button" value="Login" onclick="login()">
+                    <a href="registration.html" class="btn btn-success">
+                        Register
+                    </a>
+                    <span id="userValidation" class="text-danger"></span>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
